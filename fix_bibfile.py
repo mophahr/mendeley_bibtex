@@ -1,4 +1,5 @@
 #! /usr/bin/python2
+# -*- coding: utf-8 -*-
 '''
    Copyright 2015 M. Schönwetter.
    
@@ -48,7 +49,7 @@ with open(bibfile) as f:
 
 
 if not isfile(journals_dictionary_pickle):
-   print("No journals dictionary found at "+bibfile+". Provide it or create a new one using \"$ add_to_dictionary.py\".")
+   print("No journals dictionary found at "+journals_dictionary_pickle+". Provide it or create a new one using \"$ add_to_dictionary.py\".")
    exit(1)
 with open(journals_dictionary_pickle, 'r') as journals_dictionary_file:
    journals_dictionary=pickle.load(journals_dictionary_file)
