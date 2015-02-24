@@ -94,36 +94,11 @@ def uni2tex(text):
    
    return out
 
-class Author:
-   list = {}
-   
-   def __init__(self,key,meta):
-      Author.list[key] = self
-      self.key = key
-      for key, value in meta.iteritems():
-         setattr(self, key, value)
-      self.abb_name = ' '.join(map(lambda x:x[0]+'.', self.name.split(' ')))
-   
-   def __repr__(self):
-      text = '{[0].surname}, {[0].abb_name}'.format(self)
-      print text
-      return text
-
-def clean_authors(author_field):
-   author_list = author_field.split(' and ')
-   authors = []
-   for author in authors:
-      x,y = author.split(',')
-      meta = {'name':x, 'surname':y}
-      a = Author(author,meta)
-      authors.append(a)
-   authors_repr = [author.__repr__() for author in authors]
-   text = ' and '.join(authors_repr)
-   return text
-
-
-# class to handle the entries
 class Entry:
+   '''
+      class to handle the entries.
+      it keeps a dictionary of entries and provides a __repr__ for printing
+   '''
    list = {}
    
    def __init__(self,entry_type,fields,key=None):
@@ -178,7 +153,10 @@ def read_entry(entry):
    entry_props['citation_key_name'] = re.findall(r'[a-zA-Z]+', mendeley_citation_key)[0]
    
    # create Entry with the read fields
-   e = Entry(entry_type, entry_props, key=None) 
+   entry = Entry(entry_type, entry_props, key=None) 
+   if verbose:
+      print("fixed entry:")
+      print(str(entry))
 
 def parse(content):
    entries = content.split("@")[1:]
@@ -188,8 +166,6 @@ def parse(content):
          print("\n\nMendeley entry:")
          print("@"+entry)
       read_entry(entry)
-
-
 
 parse(raw_file_content)
 
