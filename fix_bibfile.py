@@ -1,7 +1,7 @@
 #! /usr/bin/python2
 # -*- coding: utf-8 -*-
 '''
-   Copyright 2015 M. Schönwetter.
+   Copyright 2015 M. Schönwetter & J. M. Moitto.
    
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -20,8 +20,8 @@ import pickle
 from os.path import isfile
 import unicodedata
 import re
-#from pprint import PrettyPrinter
-#pp=PrettyPrinter()
+from pprint import PrettyPrinter
+pp=PrettyPrinter()
 import sys
 ''' 
 This script takes a Mendeley-generated bibfile, changes the citation key and removes al unused fields from the bibtex entry.
@@ -33,7 +33,7 @@ if len(sys.argv) < 2:
    sys.exit("No input file defined.\nUsage:\t$ %s file.bib" % sys.argv[0])
 arguments = sys.argv[1:]
 print(arguments)
-verbose = False
+verbose = True
 for argument in arguments:
    if '.bib' in argument:
       bibfile = argument
@@ -183,7 +183,6 @@ def read_entry(entry):
 def parse(content):
    entries = content.split("@")[1:]
    fixed_entries={}
-   print len(entries)
    for entry in entries:
       if verbose:
          print("\n\nMendeley entry:")
