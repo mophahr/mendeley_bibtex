@@ -23,28 +23,57 @@ import re
 from pprint import PrettyPrinter
 pp=PrettyPrinter()
 import sys
+import argparse
 ''' 
 This script takes a Mendeley-generated bibfile, changes the citation key and removes al unused fields from the bibtex entry.
 Use like:
    $ ./fix_bibfile.py file.bib
 '''
 
-if len(sys.argv) < 2:
-   sys.exit("No input file defined.\nUsage:\t$ %s file.bib" % sys.argv[0])
-arguments = sys.argv[1:]
-print(arguments)
-verbose = True
-for argument in arguments:
-   if '.bib' in argument:
-      bibfile = argument
-   else:
-      sys.exit("Sorry, but bibfiles must end with \"bib\".")
-       
+parser = argparse.ArgumentParser(prog="fix_bibfile.py", description='Takes a bibfile created by Mendeley and cleans it up.')
+
+parser.add_argument('bibfile',
+		metavar='dirty_file', type=str,
+		help='dirty bibfile')
+parser.add_argument('-v',
+		dest='verbose', action='store_const',
+		const=True, default=False,
+		help='talk more')
+parser.add_argument('--inplace',
+		dest='in_place', action='store_const',
+		const=True, default=False,
+		help='overwrite input file (default: False) !!not yet implemented!!')
+parser.add_argument('-o',
+		help='clean bibfile (default: <dirty_file>_clean.bib)')
+parser.add_argument('-j',
+		help='journals pickle (default: ./journals_dictionary.pickle)')
+
+args = parser.parse_args()
+
+bibfile = args.bibfile
+in_place = args.in_place
+verbose = args.verbose
+
+if verbose:
+	print "argumets:", args
+
+fixed_bibfile = args.o
+if in_place:
+	fixed_bibfile=bibfile
+	print "--inplace not implemented."
+	sys.exit()
+if fixed_bibfile == None:
+	fixed_bibfile = bibfile[:-4]+"_clean.bib"
+
+journals_dictionary_pickle = args.j
+if journals_dictionary_pickle == None:
+	journals_dictionary_pickle = "./journals_dictionary.pickle"
+
+print "dirty bibfile: ", bibfile
+print "clean bibfile: ", fixed_bibfile
+print "journals dictionary: ", journals_dictionary_pickle
 
 print("Fixing Mendeley's output...")
-
-fixed_bibfile = bibfile[:-4]+"_fix.bib"
-journals_dictionary_pickle="./journals_dictionary.pickle"
 
 if not isfile(bibfile):
    print("The Mendeley-bibliography file "+bibfile+" doesn't exist. Provide it or change the filename in this script.")
