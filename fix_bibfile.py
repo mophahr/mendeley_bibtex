@@ -1,7 +1,7 @@
 #! /usr/bin/python2
 # -*- coding: utf-8 -*-
 '''
-   Copyright 2015 M. Schönwetter & J. M. Moitto.
+   Copyright 2015,2016 M. Schönwetter & J. M. Moitto.
    
    This program is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
