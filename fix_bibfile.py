@@ -66,6 +66,10 @@ accents = {
    0x0304: '=', 0x0331: 'b', 0x0307: '.', 0x0323: 'd',
    0x030A: 'r', 0x0306: 'u', 0x030C: 'v',
 }
+
+#other_replacements = { str("ł") : r"{\L}", str("ł") : r"{\l}" }
+other_replacements = { u"\u0141" : "{\L}", u"\u0142" : "{\l}" }
+#print other_replacements
 def uni2tex(text):
    out = ""
    txt = tuple(text)
@@ -73,13 +77,14 @@ def uni2tex(text):
    while i < len(txt):
       char = text[i]
       code = ord(char)
-
+      if char in other_replacements.keys():
+          out += other_replacements[char]  
+      elif unicodedata.category(char) in ("Mn", "Mc") and code in accents:
       # combining marks
-      if unicodedata.category(char) in ("Mn", "Mc") and code in accents:
          out += "\\%s{%s}" %(accents[code], txt[i+1])
          i += 1
-      # precomposed characters
       elif unicodedata.decomposition(char):
+      # precomposed characters
          base, acc = unicodedata.decomposition(char).split()
          acc = int(acc, 16)
          base = int(base, 16)
@@ -149,7 +154,18 @@ def read_entry(entry):
    entry_type, mendeley_citation_key = fields[0].split("{")
    #now we make a dictionary from the fields provided keeping only entries from fields_to_keep
    fields_to_keep = fields_to_keep_dict[entry_type]
-   entry_props = {field.split(" = ")[0]:field.split(" = ")[1].rstrip('}').lstrip('{') for field in fields[1:] if {field.split(" = ")[0]}<=fields_to_keep}
+   #the old code in the next line
+   #fails for author = {{last name}, first}:
+   #entry_props = {field.split(" = ")[0]:field.split(" = ")[1].rstrip('}').lstrip('{') for field in fields[1:] if {field.split(" = ")[0]}<=fields_to_keep}
+   #longer version:
+   entry_props = {}
+   for field in fields[1:]:
+      if {field.split(" = ")[0]}<=fields_to_keep:
+         key = field.split(" = ")[0]
+         val = field.split(" = ")[1]
+         while val[0]=="{" and val[-1]=="}":
+             val = val[1:-1]
+         entry_props.update({key : val})
    entry_props['citation_key_name'] = re.findall(r'[a-zA-Z]+', mendeley_citation_key)[0]
    
    # create Entry with the read fields
