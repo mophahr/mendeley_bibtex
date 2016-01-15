@@ -10,26 +10,81 @@ sS'shortest'
 p5
 S'PRE'
 p6
-ssS'Nonlinearity'
+ssS'Scholarpedia'
 p7
 (dp8
 S'short'
 p9
-S'Nonlin.'
+S'Scholarp.'
 p10
 sS'shortest'
 p11
-S'NonLin'
+S'ScP'
 p12
-ssS'Physical Review Letters'
+ssS'Physical Review A'
 p13
 (dp14
 S'short'
 p15
-S'PRL'
+S'Phys. Rev. A'
 p16
 sS'shortest'
 p17
-S'Phys. Rev. Lett.'
+S'PRA'
 p18
+ssS'Nonlinearity'
+p19
+(dp20
+S'short'
+p21
+S'Nonlin.'
+p22
+sS'shortest'
+p23
+S'NonLin'
+p24
+ssS'Physica A: Statistical Mechanics and its Applications'
+p25
+(dp26
+S'short'
+p27
+S'Physica A'
+p28
+sS'shortest'
+p29
+S'PyA'
+p30
+ssS'Physica D: Nonlinear Phenomena'
+p31
+(dp32
+S'short'
+p33
+S'Physica D'
+p34
+sS'shortest'
+p35
+S'PyD'
+p36
+ssS'Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences'
+p37
+(dp38
+S'short'
+p39
+S'Proc. R. Soc. A'
+p40
+sS'shortest'
+p41
+S'PRSA'
+p42
+ssS'Physical Review Letters'
+p43
+(dp44
+S'short'
+p45
+S'Phys. Rev. Lett.'
+p46
+sS'shortest'
+p47
+S'PRL'
+p48
 ss.
