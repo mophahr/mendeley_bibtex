@@ -1,90 +1,233 @@
 (dp0
-S'Physical Review E'
+S'Chaos: An Interdisciplinary Journal of Nonlinear Science'
 p1
 (dp2
 S'short'
 p3
-S'Phys. Rev. E'
+S'Chaos'
 p4
 sS'shortest'
 p5
-S'PRE'
+S'Cha'
 p6
-ssS'Scholarpedia'
+ssS'Physical Review E'
 p7
 (dp8
 S'short'
 p9
-S'Scholarp.'
+S'Phys. Rev. E'
 p10
 sS'shortest'
 p11
-S'ScP'
+S'PRE'
 p12
-ssS'Physical Review A'
+ssS'Scholarpedia'
 p13
 (dp14
 S'short'
 p15
-S'Phys. Rev. A'
+S'Scholarp.'
 p16
 sS'shortest'
 p17
-S'PRA'
+S'ScP'
 p18
-ssS'Nonlinearity'
+ssS'Chemical Physics Letters'
 p19
 (dp20
 S'short'
 p21
-S'Nonlin.'
+S'Chem. Phys. Lett.'
 p22
 sS'shortest'
 p23
-S'NonLin'
+S'CPL'
 p24
-ssS'Physica A: Statistical Mechanics and its Applications'
+ssS'Physical Review A'
 p25
 (dp26
 S'short'
 p27
-S'Physica A'
+S'Phys. Rev. A'
 p28
 sS'shortest'
 p29
-S'PyA'
+S'PRA'
 p30
-ssS'Physica D: Nonlinear Phenomena'
+ssS'Nonlinearity'
 p31
 (dp32
 S'short'
 p33
-S'Physica D'
+S'Nonlin.'
 p34
 sS'shortest'
 p35
-S'PyD'
+S'NonLin'
 p36
-ssS'Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences'
+ssS'Chaos, Solitons {\\&} Fractals'
 p37
 (dp38
 S'short'
 p39
-S'Proc. R. Soc. A'
+S'Chaos Soliton Frac.'
 p40
 sS'shortest'
 p41
-S'PRSA'
+S'CSF'
 p42
-ssS'Physical Review Letters'
+ssS'Physica A: Statistical Mechanics and its Applications'
 p43
 (dp44
 S'short'
 p45
-S'Phys. Rev. Lett.'
+S'Physica A'
 p46
 sS'shortest'
 p47
-S'PRL'
+S'PyA'
 p48
+ssS'Journal of the Optical Society of America A'
+p49
+(dp50
+S'short'
+p51
+S'J. Opt. Soc. Am. A'
+p52
+sS'shortest'
+p53
+S'JOSAA'
+p54
+ssS'Laser {\\&} Photonics Reviews'
+p55
+(dp56
+S'short'
+p57
+S'Laser Photon. Rev.'
+p58
+sS'shortest'
+p59
+S'LPR'
+p60
+ssS'Physica D: Nonlinear Phenomena'
+p61
+(dp62
+S'short'
+p63
+S'Physica D'
+p64
+sS'shortest'
+p65
+S'PD'
+p66
+ssS'Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences'
+p67
+(dp68
+S'short'
+p69
+S'Proc. R. Soc. A'
+p70
+sS'shortest'
+p71
+S'PRSA'
+p72
+ssS'Journal of Physics A: Mathematical and General'
+p73
+(dp74
+S'short'
+p75
+S'J. Phys. A'
+p76
+sS'shortest'
+p77
+S'JPA'
+p78
+ssS'Physics Reports'
+p79
+(dp80
+S'short'
+p81
+S'Phys. Rep.'
+p82
+sS'shortest'
+p83
+S'PR'
+p84
+ssS'Journal of Physics A: Mathematical and Theoretical'
+p85
+(dp86
+S'short'
+p87
+S'J. Phys. A'
+p88
+sS'shortest'
+p89
+S'JPA'
+p90
+ssS'Physics Letters A'
+p91
+(dp92
+S'short'
+p93
+S'Phys. Lett. A'
+p94
+sS'shortest'
+p95
+S'PLA'
+p96
+ssS'Reviews of Modern Physics'
+p97
+(dp98
+S'short'
+p99
+S'Rev. Mod. Phys.'
+p100
+sS'shortest'
+p101
+S'RMP'
+p102
+ssS'Physical Review Letters'
+p103
+(dp104
+S'short'
+p105
+S'Phys. Rev. Lett.'
+p106
+sS'shortest'
+p107
+S'PRL'
+p108
+ssS'Annals of Physics'
+p109
+(dp110
+S'short'
+p111
+S'Ann. Phys.'
+p112
+sS'shortest'
+p113
+S'AnnPhys'
+p114
+ssS'The Journal of the Acoustical Society of America'
+p115
+(dp116
+S'short'
+p117
+S'J. Acoust. Soc. Am.'
+p118
+sS'shortest'
+p119
+S'JASA'
+p120
+ssS'arXiv.org'
+p121
+(dp122
+S'short'
+p123
+S'arXiv'
+p124
+sS'shortest'
+p125
+S'aXv'
+p126
 ss.

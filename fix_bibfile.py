@@ -141,6 +141,8 @@ class Entry:
       if key is None:
          if self.entry_type=='book':
             shortest = 'book'
+         elif self.entry_type=='incollection':
+            shortest = 'chap'
          elif self.entry_type=='article':
             journal_name = self.fields['journal']
             try:
@@ -170,6 +172,9 @@ fields_to_keep_dict={
       ]),
    "book" : frozenset([
       "author", "title", "year", "doi", "publisher"
+      ]),
+   "incollection" : frozenset([
+      "author", "title", "year", "doi", "publisher", "booktitle", "pages"
       ])
    }
 
