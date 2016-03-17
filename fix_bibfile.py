@@ -151,7 +151,7 @@ class Entry:
                print("no entry for "+journal_name+" in "+journals_dictionary_pickle+". create one using\
                \n\t$ add_to_dictionary.py \""+journal_name+"\" \"<short name>\" \"<very short name>\"")
                exit(1)
-         self.key = '{0[citation_key_name]}:{1}{0[year]}'.format(self.fields,shortest)
+         self.key = '{0[citation_key_name]}:{1}{0[year]}{0[same_year_mod]}'.format(self.fields,shortest)
       del self.fields['citation_key_name']
       Entry.list[self.key] = self
       if self.fields['author']:
@@ -200,8 +200,16 @@ def read_entry(entry):
          while val[0]=="{" and val[-1]=="}":
              val = val[1:-1]
          entry_props.update({key : val})
-   entry_props['citation_key_name'] = re.findall(r'[a-zA-Z]+', mendeley_citation_key)[0]
-   
+   nonnumeric_part = re.findall(r'[a-zA-Z]+', mendeley_citation_key)
+   entry_props['citation_key_name'] = nonnumeric_part[0]
+   if len(nonnumeric_part)>1:
+      if len(nonnumeric_part[1])==1:
+         entry_props['same_year_mod']=nonnumeric_part[1]
+      else:
+         entry_props['same_year_mod']=""
+   else:
+      entry_props['same_year_mod']=""
+
    # create Entry with the read fields
    entry = Entry(entry_type, entry_props, key=None) 
    if verbose:
