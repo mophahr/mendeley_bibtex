@@ -54,27 +54,27 @@ sS'shortest'
 p29
 S'LPR'
 p30
-ssS'Physics Letters A'
+ssS'Journal of Physics A: Mathematical and Theoretical'
 p31
 (dp32
 S'short'
 p33
-S'Phys. Lett. A'
+S'J. Phys. A'
 p34
 sS'shortest'
 p35
-S'PLA'
+S'JPA'
 p36
-ssS'New Journal of Physics'
+ssS'Physics Letters A'
 p37
 (dp38
 S'short'
 p39
-S'New J. Phys.'
+S'Phys. Lett. A'
 p40
 sS'shortest'
 p41
-S'NJP'
+S'PLA'
 p42
 ssS'Medical Image Analysis'
 p43
@@ -87,246 +87,290 @@ sS'shortest'
 p47
 S'MIA'
 p48
-ssS'Journal of the Optical Society of America A'
+ssS'Nonlinearity'
 p49
 (dp50
 S'short'
 p51
-S'J. Opt. Soc. Am. A'
+S'Nonlin.'
 p52
 sS'shortest'
 p53
-S'JOSAA'
+S'NonLin'
 p54
-ssS'Journal of Optics A: Pure and Applied Optics'
+ssS'Nature'
 p55
 (dp56
 S'short'
 p57
-S'J. Opt. A'
+S'Nature'
 p58
 sS'shortest'
 p59
-S'JOA'
+S'Nat'
 p60
-ssS'The Journal of the Acoustical Society of America'
+ssS'Journal of the Optical Society of America A'
 p61
 (dp62
 S'short'
 p63
-S'J. Acoust. Soc. Am.'
+S'J. Opt. Soc. Am. A'
 p64
 sS'shortest'
 p65
-S'JASA'
+S'JOSAA'
 p66
-ssS'European Journal of Physics'
+ssS'Journal of Optics A: Pure and Applied Optics'
 p67
 (dp68
 S'short'
 p69
-S'Europ. J. Phys.'
+S'J. Opt. A'
 p70
 sS'shortest'
 p71
-S'EJP'
+S'JOA'
 p72
-ssS'Europhysics Letters (EPL)'
+ssS'The Journal of the Acoustical Society of America'
 p73
 (dp74
 S'short'
 p75
-S'Europh. Lett.'
+S'J. Acoust. Soc. Am.'
 p76
 sS'shortest'
 p77
-S'EPL'
+S'JASA'
 p78
-ssS'Chaos: An Interdisciplinary Journal of Nonlinear Science'
+ssS'European Journal of Physics'
 p79
 (dp80
 S'short'
 p81
-S'Chaos'
+S'Europ. J. Phys.'
 p82
 sS'shortest'
 p83
-S'Cha'
+S'EJP'
 p84
-ssS'Transactions of the American Mathematical Society'
+ssS'Europhysics Letters (EPL)'
 p85
 (dp86
 S'short'
 p87
-S'Trans. Amer. Math. Soc.'
+S'Europh. Lett.'
 p88
 sS'shortest'
 p89
-S'TAMS'
+S'EPL'
 p90
-ssS'Journal of Physics A: Mathematical and Theoretical'
+ssS'Chaos: An Interdisciplinary Journal of Nonlinear Science'
 p91
 (dp92
 S'short'
 p93
-S'J. Phys. A'
+S'Chaos'
 p94
 sS'shortest'
 p95
-S'JPA'
+S'Cha'
 p96
-ssS'Chemical Physics Letters'
+ssS'Transactions of the American Mathematical Society'
 p97
 (dp98
 S'short'
 p99
-S'Chem. Phys. Lett.'
+S'Trans. Amer. Math. Soc.'
 p100
 sS'shortest'
 p101
-S'CPL'
+S'TAMS'
 p102
-ssS'Nonlinearity'
+ssS'New Journal of Physics'
 p103
 (dp104
 S'short'
 p105
-S'Nonlin.'
+S'New J. Phys.'
 p106
 sS'shortest'
 p107
-S'NonLin'
+S'NJP'
 p108
-ssS'Chaos, Solitons {\\&} Fractals'
+ssS'Chemical Physics Letters'
 p109
 (dp110
 S'short'
 p111
-S'Chaos Soliton Frac.'
+S'Chem. Phys. Lett.'
 p112
 sS'shortest'
 p113
-S'CSF'
+S'CPL'
 p114
-ssS'International Journal of Bifurcation and Chaos'
+ssS'PLOS ONE'
 p115
 (dp116
 S'short'
 p117
-S'Int. J. Bifurcation Chaos'
+S'PLoS ONE'
 p118
 sS'shortest'
 p119
-S'IJBC'
+S'PLO'
 p120
-ssS'Journal of Physics A: Mathematical and General'
+ssS'Chaos, Solitons {\\&} Fractals'
 p121
 (dp122
 S'short'
 p123
-S'J. Phys. A'
+S'Chaos Soliton Frac.'
 p124
 sS'shortest'
 p125
-S'JPA'
+S'CSF'
 p126
-ssS'Physica A: Statistical Mechanics and its Applications'
+ssS'Science'
 p127
 (dp128
 S'short'
 p129
-S'Physica A'
+S'Science'
 p130
 sS'shortest'
 p131
-S'PyA'
+S'Sci'
 p132
-ssS'Physica D: Nonlinear Phenomena'
+ssS'International Journal of Bifurcation and Chaos'
 p133
 (dp134
 S'short'
 p135
-S'Physica D'
+S'Int. J. Bifurcation Chaos'
 p136
 sS'shortest'
 p137
-S'PD'
+S'IJBC'
 p138
-ssS'Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences'
+ssS'Nature Communications'
 p139
 (dp140
 S'short'
 p141
-S'Proc. R. Soc. A'
+S'Nature Comm.'
 p142
 sS'shortest'
 p143
-S'PRSA'
+S'NaC'
 p144
-ssS'Physics Reports'
+ssS'Journal of Physics A: Mathematical and General'
 p145
 (dp146
 S'short'
 p147
-S'Phys. Rep.'
+S'J. Phys. A'
 p148
 sS'shortest'
 p149
-S'PR'
+S'JPA'
 p150
-ssS'Acta Mathematica Academiae Scientiarum Hungaricae'
+ssS'Physica A: Statistical Mechanics and its Applications'
 p151
 (dp152
 S'short'
 p153
-S'Act. Mat. Ac. Sc. Hun.'
+S'Physica A'
 p154
 sS'shortest'
 p155
-S'AMASH'
+S'PyA'
 p156
-ssS'Applied Physics Letters'
+ssS'Physica D: Nonlinear Phenomena'
 p157
 (dp158
 S'short'
 p159
-S'Appl. Phys. Lett.'
+S'Physica D'
 p160
 sS'shortest'
 p161
-S'APL'
+S'PD'
 p162
-ssS'Physical Review Letters'
+ssS'Proceedings of the Royal Society A: Mathematical, Physical and Engineering Sciences'
 p163
 (dp164
 S'short'
 p165
-S'Phys. Rev. Lett.'
+S'Proc. R. Soc. A'
 p166
 sS'shortest'
 p167
-S'PRL'
+S'PRSA'
 p168
-ssS'Annals of Physics'
+ssS'Physics Reports'
 p169
 (dp170
 S'short'
 p171
-S'Ann. Phys.'
+S'Phys. Rep.'
 p172
 sS'shortest'
 p173
-S'AnnPhys'
+S'PR'
 p174
-ssS'arXiv.org'
+ssS'Acta Mathematica Academiae Scientiarum Hungaricae'
 p175
 (dp176
 S'short'
 p177
-S'arXiv'
+S'Act. Mat. Ac. Sc. Hun.'
 p178
 sS'shortest'
 p179
-S'aXv'
+S'AMASH'
 p180
+ssS'Applied Physics Letters'
+p181
+(dp182
+S'short'
+p183
+S'Appl. Phys. Lett.'
+p184
+sS'shortest'
+p185
+S'APL'
+p186
+ssS'Physical Review Letters'
+p187
+(dp188
+S'short'
+p189
+S'Phys. Rev. Lett.'
+p190
+sS'shortest'
+p191
+S'PRL'
+p192
+ssS'Annals of Physics'
+p193
+(dp194
+S'short'
+p195
+S'Ann. Phys.'
+p196
+sS'shortest'
+p197
+S'AnnPhys'
+p198
+ssS'arXiv.org'
+p199
+(dp200
+S'short'
+p201
+S'arXiv'
+p202
+sS'shortest'
+p203
+S'aXv'
+p204
 ss.
